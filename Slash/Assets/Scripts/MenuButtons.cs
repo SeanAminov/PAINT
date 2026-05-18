@@ -7,13 +7,25 @@ namespace Slash
     public class MenuButtons : MonoBehaviour
     {
         [Header("Wiring")]
-        public Button testButton;
-        public Button levelsButton;
+        public Button endlessButton;
+        public Button creditsButton;
 
         void Start()
         {
-            if (testButton != null) testButton.onClick.AddListener(SceneLoader.LoadTest);
-            if (levelsButton != null) levelsButton.onClick.AddListener(SceneLoader.LoadLevels);
+            if (endlessButton != null) endlessButton.onClick.AddListener(OnEndlessClicked);
+            if (creditsButton != null) creditsButton.onClick.AddListener(OnCreditsClicked);
+        }
+
+        void OnEndlessClicked()
+        {
+            AudioCues.PlayMenuClick();
+            SceneLoader.LoadEndless();
+        }
+
+        void OnCreditsClicked()
+        {
+            AudioCues.PlayMenuClick();
+            SceneLoader.LoadCredits();
         }
     }
 }

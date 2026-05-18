@@ -6,11 +6,11 @@ namespace Slash
     public static class SceneLoader
     {
         public const string MenuScene = "MainMenu";
-        public const string TestScene = "Test";
-        public const string LevelsScene = "Levels";
+        public const string EndlessScene = "Endless";
+        public const string CreditsScene = "CreditScene";
 
         public static void LoadMenu() { SceneManager.LoadScene(MenuScene); }
-        public static void LoadTest() { SceneManager.LoadScene(TestScene); }
-        public static void LoadLevels() { SceneManager.LoadScene(LevelsScene); }
+        public static void LoadEndless() { SceneManager.LoadScene(EndlessScene); }
+        public static void LoadCredits() { SceneManager.LoadScene(CreditsScene); }
     }
 }

@@ -2,7 +2,8 @@ using UnityEngine;
 
 namespace Slash
 {
-    // Follows the player on X, keeps Y and Z locked. Has screen shake.
+    // Follows target on X with SmoothDamp; Y and Z stay locked at the start
+    // values. Includes a Perlin-noise shake helper for hit feedback.
     public class CameraFollow : MonoBehaviour
     {
         public Transform target;

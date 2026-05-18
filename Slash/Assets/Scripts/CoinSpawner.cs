@@ -2,8 +2,8 @@ using UnityEngine;
 
 namespace Slash
 {
-    // Spawns coins from enemy death positions. Listens to Enemy.OnAnyEnemyDied
-    // and drops a small burst that arcs outward before settling into bob.
+    // Drops a small burst of coins at every enemy death. Subscribes to
+    // Enemy.OnAnyEnemyDied; each coin arcs outward then settles into bob.
     public class CoinSpawner : MonoBehaviour
     {
         [Header("Wiring")]
@@ -15,7 +15,7 @@ namespace Slash
 
         [Header("Visual")]
         public Color coinColor = new Color(1f, 0.85f, 0.2f, 1f);
-        public float coinSize = 0.3f;
+        public float coinSize = 0.45f;
 
         [Header("Launch")]
         public float launchSpeedMin = 3f;

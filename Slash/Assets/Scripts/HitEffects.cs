@@ -3,15 +3,19 @@ using UnityEngine.UI;
 
 namespace Slash
 {
-    // Blood splatter, screen flash, hit freeze, and screen shake on every hit.
-    // Blood is emitted per particle with randomized velocity biased toward the
-    // hit direction, plus a wider chunk burst for chunky gore feel.
+    // Hit feedback orchestrator: blood spray and chunks, screen flash, brief
+    // time freeze, and camera shake. Subscribes to PlayerController.OnHitLanded.
     public class HitEffects : MonoBehaviour
     {
         [Header("Wiring")]
         public PlayerController player;
         public CameraFollow cameraFollow;
         public Image flashOverlay;
+        public UltSystem ult;
+
+        [Header("Shake")]
+        // Kills outside ult feel lighter; ult kills get the full shake.
+        public float nonUltShakeMultiplier = 0.45f;
 
         [Header("Screen Flash")]
         public Color flashColor = new Color(1f, 1f, 1f, 0.25f);
@@ -104,7 +108,12 @@ namespace Slash
 
             _flashUntil = Time.unscaledTime + flashDuration;
 
-            if (cameraFollow != null) cameraFollow.Shake();
+            if (cameraFollow != null)
+            {
+                bool ultActive = ult != null && ult.IsActive;
+                float scale = ultActive ? 1f : nonUltShakeMultiplier;
+                cameraFollow.Shake(cameraFollow.shakeIntensity * scale, cameraFollow.shakeDuration);
+            }
 
             if (freezeDuration > 0f)
             {

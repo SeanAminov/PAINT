@@ -1,0 +1,397 @@
+fileFormatVersion: 2
+guid: aff67a261e03ee94db88f3f46298fd01
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1902788136624674735
+    second: Princess_0
+  - first:
+      213: 1991205611930870894
+    second: Princess_1
+  - first:
+      213: 4350626190467156469
+    second: Princess_2
+  - first:
+      213: 6365033578369589530
+    second: Princess_3
+  - first:
+      213: 8053177618943144951
+    second: Princess_4
+  - first:
+      213: 3804774797300218941
+    second: Princess_5
+  - first:
+      213: 9144878296099135665
+    second: Princess_6
+  - first:
+      213: -251305057237121150
+    second: Princess_7
+  - first:
+      213: -2658768251227264326
+    second: Princess_8
+  - first:
+      213: 7895236203538504227
+    second: Princess_9
+  - first:
+      213: 1339525567487549059
+    second: Princess_10
+  - first:
+      213: -8366119070542743998
+    second: Princess_11
+  - first:
+      213: -6754343647877918636
+    second: Princess_12
+  - first:
+      213: 2786141853140549412
+    second: Princess_13
+  - first:
+      213: 8155317355110192214
+    second: Princess_14
+  - first:
+      213: -6943159514549783722
+    second: Princess_15
+  - first:
+      213: 8103722289371619834
+    second: Princess_16
+  - first:
+      213: 6256727341466114815
+    second: Princess_17
+  - first:
+      213: -8797861986130486703
+    second: Princess_18
+  - first:
+      213: -9037003046876534818
+    second: Princess_19
+  - first:
+      213: 1686348186814822687
+    second: Princess_20
+  - first:
+      213: -5772914148436750985
+    second: Princess_21
+  - first:
+      213: 1081289649320373481
+    second: Princess_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 7
+  spritePivot: {x: 0.5, y: 0}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Princess_56
+      rect:
+        serializedVersion: 2
+        x: 2042
+        y: 2000
+        width: 1863
+        height: 1990
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adb4e13acd3ce9d47ba341eb1357509b
+      internalID: 1991205611930870894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess_8
+      rect:
+        serializedVersion: 2
+        x: 2042
+        y: 3
+        width: 1863
+        height: 1990
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2fbc7aaeefceed49a145cdfb03467ec
+      internalID: 1902788136624674735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess_2
+      rect:
+        serializedVersion: 2
+        x: 2042
+        y: 4000
+        width: 1863
+        height: 1990
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83568ada55d8e0a469557d133ca2bbc8
+      internalID: 4350626190467156469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess_4
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 1997
+        width: 1863
+        height: 1990
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 963283a89d49f834daeea15a1d3dc7c3
+      internalID: 6365033578369589530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess_1
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 4000
+        width: 1863
+        height: 1990
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 049b8b85d33e89049b2a8532e686a541
+      internalID: 8053177618943144951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess_7
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 3
+        width: 1863
+        height: 1990
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76a76eb691f986345a4ce16913fd6462
+      internalID: 3804774797300218941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess_6
+      rect:
+        serializedVersion: 2
+        x: 4038
+        y: 2014
+        width: 1863
+        height: 1990
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 453f2ce74dcb9654ca864232ca5e8280
+      internalID: 9144878296099135665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess_3
+      rect:
+        serializedVersion: 2
+        x: 4038
+        y: 4000
+        width: 1863
+        height: 1990
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96a1fed68ae956d42b916926dde80e8e
+      internalID: -251305057237121150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5912e8ebd7ed18243a379ed5c0464832
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Princess_1: 8053177618943144951
+      Princess_10: 1339525567487549059
+      Princess_11: -8366119070542743998
+      Princess_12: -6754343647877918636
+      Princess_13: 2786141853140549412
+      Princess_14: 8155317355110192214
+      Princess_15: -6943159514549783722
+      Princess_16: 8103722289371619834
+      Princess_17: 6256727341466114815
+      Princess_18: -8797861986130486703
+      Princess_19: -9037003046876534818
+      Princess_2: 4350626190467156469
+      Princess_20: 1686348186814822687
+      Princess_21: -5772914148436750985
+      Princess_22: 1081289649320373481
+      Princess_3: -251305057237121150
+      Princess_4: 6365033578369589530
+      Princess_56: 1991205611930870894
+      Princess_6: 9144878296099135665
+      Princess_7: 3804774797300218941
+      Princess_8: 1902788136624674735
+      Princess_9: 7895236203538504227
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

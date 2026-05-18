@@ -1,0 +1,352 @@
+fileFormatVersion: 2
+guid: b72a589f03dafe247a3162eeda6df9b0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3352386401844048957
+    second: BasicSlashAttack_0
+  - first:
+      213: -3332908875954549183
+    second: BasicSlashAttack_1
+  - first:
+      213: 1562633515225009012
+    second: BasicSlashAttack_2
+  - first:
+      213: 9055554905286469977
+    second: BasicSlashAttack_3
+  - first:
+      213: 7630534803262438530
+    second: BasicSlashAttack_4
+  - first:
+      213: 4369363534587361050
+    second: BasicSlashAttack_5
+  - first:
+      213: -850849115920056159
+    second: BasicSlashAttack_6
+  - first:
+      213: -4939104881702564752
+    second: BasicSlashAttack_7
+  - first:
+      213: -8053521602955858057
+    second: BasicSlashAttack_8
+  - first:
+      213: -8514116242423807108
+    second: BasicSlashAttack_9
+  - first:
+      213: -656512206825260374
+    second: BasicSlashAttack_10
+  - first:
+      213: 3987447670773732264
+    second: BasicSlashAttack_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 7
+  spritePivot: {x: 0.5, y: 0}
+  spritePixelsToUnits: 155
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BasicSlashAttack_5
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 1069
+        width: 767
+        height: 782
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cb4c38445ee971d0800000000000000
+      internalID: -3352386401844048957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicSlashAttack_4
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 1072
+        width: 767
+        height: 782
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14e8bfb29012fb1d0800000000000000
+      internalID: -3332908875954549183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicSlashAttack_1
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 2048
+        width: 767
+        height: 782
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47b4b1527e69fa510800000000000000
+      internalID: 1562633515225009012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicSlashAttack_9
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 91
+        width: 767
+        height: 782
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a17ff9d1cf813ac30800000000000000
+      internalID: 4369363534587361050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicSlashAttack_6
+      rect:
+        serializedVersion: 2
+        x: 2099
+        y: 1074
+        width: 767
+        height: 782
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a04120bc3d2134f0800000000000000
+      internalID: -850849115920056159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicSlashAttack_8
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 94
+        width: 767
+        height: 782
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c468c64d583cf046920bf0ab45facf1
+      internalID: -4939104881702564752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicSlashAttack_2
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 2045
+        width: 767
+        height: 782
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cb5612cb46c77b48862e4375ecc1962
+      internalID: 9055554905286469977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicSlashAttack_3
+      rect:
+        serializedVersion: 2
+        x: 2084
+        y: 2044
+        width: 767
+        height: 782
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c1a6b1ebb0221d4791d09defb522dbb
+      internalID: 7630534803262438530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 7f4b02ea2a0e28c4f960cb8f7a7224ac
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BasicSlashAttack_1: 1562633515225009012
+      BasicSlashAttack_10: -656512206825260374
+      BasicSlashAttack_11: 3987447670773732264
+      BasicSlashAttack_2: 9055554905286469977
+      BasicSlashAttack_3: 7630534803262438530
+      BasicSlashAttack_4: -3332908875954549183
+      BasicSlashAttack_5: -3352386401844048957
+      BasicSlashAttack_6: -850849115920056159
+      BasicSlashAttack_8: -4939104881702564752
+      BasicSlashAttack_9: 4369363534587361050
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -8,7 +8,7 @@ namespace Slash
     public class UltSystem : MonoBehaviour
     {
         [Header("Charge")]
-        public float chargePerKill = 0.07f;
+        public float chargePerKill = 0.15f;
         public float ultDuration = 15f;
 
         public float Charge { get; private set; }
@@ -29,7 +29,7 @@ namespace Slash
             var kb = Keyboard.current;
             if (kb == null) return;
 
-            if (kb.gKey.wasPressedThisFrame && IsReady)
+            if (kb.vKey.wasPressedThisFrame && IsReady)
             {
                 Activate();
             }

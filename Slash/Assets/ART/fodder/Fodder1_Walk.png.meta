@@ -1,0 +1,572 @@
+fileFormatVersion: 2
+guid: d252ecb5db15d6e4e8460580f750d700
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6011130376757552466
+    second: Fodder1_Walk_0
+  - first:
+      213: -4731543069804992108
+    second: Fodder1_Walk_1
+  - first:
+      213: -4219437320844954868
+    second: Fodder1_Walk_2
+  - first:
+      213: -2194559378722419158
+    second: Fodder1_Walk_3
+  - first:
+      213: 2745755202698999666
+    second: Fodder1_Walk_4
+  - first:
+      213: -6544683145567888455
+    second: Fodder1_Walk_5
+  - first:
+      213: -3680823367087898692
+    second: Fodder1_Walk_6
+  - first:
+      213: -2859969602564125866
+    second: Fodder1_Walk_7
+  - first:
+      213: 3361017300414096936
+    second: Fodder1_Walk_8
+  - first:
+      213: -2287948841061812046
+    second: Fodder1_Walk_9
+  - first:
+      213: 1201397151649696414
+    second: Fodder1_Walk_10
+  - first:
+      213: 7550059425234040465
+    second: Fodder1_Walk_11
+  - first:
+      213: 5022671993141751744
+    second: Fodder1_Walk_12
+  - first:
+      213: -4348909055108800675
+    second: Fodder1_Walk_13
+  - first:
+      213: 5307336403889513509
+    second: Fodder1_Walk_14
+  - first:
+      213: -8510723276098266044
+    second: Fodder1_Walk_15
+  - first:
+      213: 8078192565356362818
+    second: Fodder1_Walk_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 7
+  spritePivot: {x: 0.5, y: 0}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Fodder1_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 3169
+        width: 242
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eaa5eca45cc249ca0800000000000000
+      internalID: -6011130376757552466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fodder1_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 3169
+        width: 242
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 499efc495ae265eb0800000000000000
+      internalID: -4731543069804992108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fodder1_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 3169
+        width: 242
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c03b20bbc1c8175c0800000000000000
+      internalID: -4219437320844954868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fodder1_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 3169
+        width: 242
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2e8fb05fdb5b81e0800000000000000
+      internalID: -2194559378722419158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fodder1_Walk_4
+      rect:
+        serializedVersion: 2
+        x: 2114
+        y: 3169
+        width: 242
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 277fd092fc1ea1620800000000000000
+      internalID: 2745755202698999666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fodder1_Walk_5
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 2194
+        width: 242
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bb90f4ba5d9c25a0800000000000000
+      internalID: -6544683145567888455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fodder1_Walk_6
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 2194
+        width: 242
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbfb4c346a61becc0800000000000000
+      internalID: -3680823367087898692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fodder1_Walk_7
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 2194
+        width: 242
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65b00ca9cc85f48d0800000000000000
+      internalID: -2859969602564125866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fodder1_Walk_8
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 2194
+        width: 242
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 826ef136d6bb4ae20800000000000000
+      internalID: 3361017300414096936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fodder1_Walk_9
+      rect:
+        serializedVersion: 2
+        x: 2114
+        y: 2194
+        width: 242
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b87e30b6a29f30e0800000000000000
+      internalID: -2287948841061812046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fodder1_Walk_10
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 1219
+        width: 242
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9a0f3a18583ca010800000000000000
+      internalID: 1201397151649696414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fodder1_Walk_11
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 1219
+        width: 242
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1963a2a9b0337c860800000000000000
+      internalID: 7550059425234040465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fodder1_Walk_12
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 1219
+        width: 242
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cf6486019d14b540800000000000000
+      internalID: 5022671993141751744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fodder1_Walk_13
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 1219
+        width: 242
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5f92c1814295a3c0800000000000000
+      internalID: -4348909055108800675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fodder1_Walk_14
+      rect:
+        serializedVersion: 2
+        x: 2114
+        y: 1219
+        width: 242
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5246551075277a940800000000000000
+      internalID: 5307336403889513509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fodder1_Walk_15
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 244
+        width: 242
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44c938aa546d3e980800000000000000
+      internalID: -8510723276098266044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fodder1_Walk_16
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 244
+        width: 242
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24c744d86518b1070800000000000000
+      internalID: 8078192565356362818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0b1724ff8df7887419707ecfabc3014c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Fodder1_Walk_0: -6011130376757552466
+      Fodder1_Walk_1: -4731543069804992108
+      Fodder1_Walk_10: 1201397151649696414
+      Fodder1_Walk_11: 7550059425234040465
+      Fodder1_Walk_12: 5022671993141751744
+      Fodder1_Walk_13: -4348909055108800675
+      Fodder1_Walk_14: 5307336403889513509
+      Fodder1_Walk_15: -8510723276098266044
+      Fodder1_Walk_16: 8078192565356362818
+      Fodder1_Walk_2: -4219437320844954868
+      Fodder1_Walk_3: -2194559378722419158
+      Fodder1_Walk_4: 2745755202698999666
+      Fodder1_Walk_5: -6544683145567888455
+      Fodder1_Walk_6: -3680823367087898692
+      Fodder1_Walk_7: -2859969602564125866
+      Fodder1_Walk_8: 3361017300414096936
+      Fodder1_Walk_9: -2287948841061812046
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

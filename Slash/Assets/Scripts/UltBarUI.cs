@@ -3,15 +3,17 @@ using UnityEngine.UI;
 
 namespace Slash
 {
-    // Drives the ult charge bar, the active duration drain, and the time stop
-    // ability cooldown slot. Pulses the "READY!" label when fully charged.
+    // Drives the ult charge bar, the active duration drain, and the two ult
+    // ability slots (X time stop, Z wave). Pulses the "READY!" label when full.
     public class UltBarUI : MonoBehaviour
     {
         [Header("Wiring")]
         public UltSystem ult;
         public UltAbilities abilities;
+        public UltChargeAttack chargeAttack;
         public Image chargeFill;
         public Image ability1Fill;
+        public Image ability2Fill;
         public Text readyLabel;
 
         [Header("Colors")]
@@ -27,7 +29,8 @@ namespace Slash
             if (ult.IsActive) UpdateActiveBar();
             else UpdateChargeBar();
 
-            UpdateAbilitySlot();
+            UpdateTimeStopSlot();
+            UpdateWaveSlot();
         }
 
         void UpdateActiveBar()
@@ -57,11 +60,11 @@ namespace Slash
             }
         }
 
-        void UpdateAbilitySlot()
+        void UpdateTimeStopSlot()
         {
             if (ability1Fill == null || abilities == null) return;
 
-            if (ult != null && !ult.IsActive)
+            if (!ult.IsActive)
             {
                 ability1Fill.fillAmount = 1f;
                 ability1Fill.color = lockedColor;
@@ -70,6 +73,28 @@ namespace Slash
 
             ability1Fill.fillAmount = 1f - abilities.TimeStopCooldownFraction;
             ability1Fill.color = abilities.TimeStopActive ? activeColor : chargingColor;
+        }
+
+        void UpdateWaveSlot()
+        {
+            if (ability2Fill == null || chargeAttack == null) return;
+
+            if (!ult.IsActive)
+            {
+                ability2Fill.fillAmount = 1f;
+                ability2Fill.color = lockedColor;
+                return;
+            }
+
+            if (chargeAttack.IsCharging)
+            {
+                ability2Fill.fillAmount = chargeAttack.ChargeFraction;
+                ability2Fill.color = activeColor;
+                return;
+            }
+
+            ability2Fill.fillAmount = 1f - chargeAttack.CooldownFraction;
+            ability2Fill.color = chargingColor;
         }
     }
 }

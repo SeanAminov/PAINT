@@ -2,8 +2,7 @@ using UnityEngine;
 
 namespace Slash
 {
-    // Coin drop with a brief launch arc, a bobbing idle, then a magnetic
-    // pickup that accelerates toward the player and self-destructs on contact.
+    // Coin: launch arc, bob idle, then magnet to the player on close range.
     public class Coin : MonoBehaviour
     {
         [Header("Wiring")]
@@ -95,6 +94,7 @@ namespace Slash
 
             if (Vector2.Distance(transform.position, player.position) <= pickupRadius)
             {
+                AudioCues.PlayCoin(transform.position);
                 CoinEvents.RaisePickup(value);
                 Destroy(gameObject);
             }

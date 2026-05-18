@@ -3,8 +3,8 @@ using UnityEngine.InputSystem;
 
 namespace Slash
 {
-    // Moveset that unlocks during UltSystem.IsActive. Key 1 triggers time stop,
-    // which slows enemies via TimeControl.enemyTimeScale and pops the VFX.
+    // Ult-only moveset. X triggers time stop, which slows enemies via
+    // TimeControl.enemyTimeScale and pops the TimeStopVFX shockwave.
     public class UltAbilities : MonoBehaviour
     {
         [Header("Wiring")]
@@ -38,7 +38,7 @@ namespace Slash
             var kb = Keyboard.current;
             if (kb == null) return;
 
-            if (kb.digit1Key.wasPressedThisFrame && Time.time >= _timeStopReadyAt)
+            if (kb.xKey.wasPressedThisFrame && Time.time >= _timeStopReadyAt)
             {
                 TriggerTimeStop();
             }
@@ -53,6 +53,7 @@ namespace Slash
         {
             _timeStopEndsAt = Time.time + timeStopDuration;
             _timeStopReadyAt = Time.time + timeStopCooldown;
+            AudioCues.PlayTimeStop(transform.position);
             if (vfx != null) vfx.Trigger(timeStopDuration);
         }
     }

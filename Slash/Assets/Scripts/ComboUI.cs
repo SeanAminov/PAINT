@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 namespace Slash
 {
-    // Combo counter with idle pulse, hit punch, milestone punch, and color tiers.
+    // Combo counter. Idle pulse, hit punch, milestone punch, color tiers.
     public class ComboUI : MonoBehaviour
     {
         [Header("Wiring")]

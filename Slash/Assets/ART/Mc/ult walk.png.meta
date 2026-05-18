@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: eccc56f3290ad8748baa99839a35aaac
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 541013149152554167
+    second: ult walk_0
+  - first:
+      213: -4806397351487288742
+    second: ult walk_1
+  - first:
+      213: 5672157971829229732
+    second: ult walk_2
+  - first:
+      213: -3717390723003598020
+    second: ult walk_3
+  - first:
+      213: 7394672386351875925
+    second: ult walk_4
+  - first:
+      213: -5504834981029276722
+    second: ult walk_5
+  - first:
+      213: -47225389822102045
+    second: ult walk_6
+  - first:
+      213: -4059280206546634613
+    second: ult walk_7
+  - first:
+      213: 8432092442238598621
+    second: ult walk_8
+  - first:
+      213: -8464547492479946846
+    second: ult walk_9
+  - first:
+      213: 3923052105386611108
+    second: ult walk_10
+  - first:
+      213: -8668019050563526828
+    second: ult walk_11
+  - first:
+      213: -5708904935282410393
+    second: ult walk_12
+  - first:
+      213: 4776700702457375322
+    second: ult walk_13
+  - first:
+      213: -8842118413460654404
+    second: ult walk_14
+  - first:
+      213: -8843466286964722364
+    second: ult walk_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 7
+  spritePivot: {x: 0.5, y: 0}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ult walk_0
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 2879
+        width: 472
+        height: 432
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bcad0eb790128700800000000000000
+      internalID: 541013149152554167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult walk_1
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 2879
+        width: 472
+        height: 432
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5ac83ff21f3c4db0800000000000000
+      internalID: -4806397351487288742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult walk_2
+      rect:
+        serializedVersion: 2
+        x: 1766
+        y: 2879
+        width: 472
+        height: 432
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a808cc7f9d87be40800000000000000
+      internalID: 5672157971829229732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult walk_3
+      rect:
+        serializedVersion: 2
+        x: 2575
+        y: 2884
+        width: 472
+        height: 432
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3bb90045dc296cc0800000000000000
+      internalID: -3717390723003598020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult walk_4
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 1960
+        width: 472
+        height: 432
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 557c4e25b572f9660800000000000000
+      internalID: 7394672386351875925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult walk_5
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 1970
+        width: 472
+        height: 432
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec31b9820c5ea93b0800000000000000
+      internalID: -5504834981029276722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult walk_6
+      rect:
+        serializedVersion: 2
+        x: 1776
+        y: 1970
+        width: 472
+        height: 432
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e5364712c8385ff0800000000000000
+      internalID: -47225389822102045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult walk_7
+      rect:
+        serializedVersion: 2
+        x: 2575
+        y: 1970
+        width: 472
+        height: 432
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b88730db82a8aa7c0800000000000000
+      internalID: -4059280206546634613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult walk_8
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 1041
+        width: 472
+        height: 432
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddd33eca66fc40570800000000000000
+      internalID: 8432092442238598621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult walk_9
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 1041
+        width: 472
+        height: 432
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2af2f4617e2e78a80800000000000000
+      internalID: -8464547492479946846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult walk_10
+      rect:
+        serializedVersion: 2
+        x: 1751
+        y: 1041
+        width: 472
+        height: 432
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a1dae8ca1b717630800000000000000
+      internalID: 3923052105386611108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult walk_11
+      rect:
+        serializedVersion: 2
+        x: 2575
+        y: 1041
+        width: 472
+        height: 432
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45f97d0499205b780800000000000000
+      internalID: -8668019050563526828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult walk_12
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 122
+        width: 472
+        height: 432
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76c740c5535e5c0b0800000000000000
+      internalID: -5708904935282410393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult walk_13
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 132
+        width: 472
+        height: 432
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5aa4581bff3a4240800000000000000
+      internalID: 4776700702457375322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult walk_14
+      rect:
+        serializedVersion: 2
+        x: 1776
+        y: 132
+        width: 472
+        height: 432
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb6bcb7862c7a4580800000000000000
+      internalID: -8842118413460654404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult walk_15
+      rect:
+        serializedVersion: 2
+        x: 2575
+        y: 132
+        width: 472
+        height: 432
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44533564442b54580800000000000000
+      internalID: -8843466286964722364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: dda07f7a610777b4782c02fbb23cac9d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ult walk_0: 541013149152554167
+      ult walk_1: -4806397351487288742
+      ult walk_10: 3923052105386611108
+      ult walk_11: -8668019050563526828
+      ult walk_12: -5708904935282410393
+      ult walk_13: 4776700702457375322
+      ult walk_14: -8842118413460654404
+      ult walk_15: -8843466286964722364
+      ult walk_2: 5672157971829229732
+      ult walk_3: -3717390723003598020
+      ult walk_4: 7394672386351875925
+      ult walk_5: -5504834981029276722
+      ult walk_6: -47225389822102045
+      ult walk_7: -4059280206546634613
+      ult walk_8: 8432092442238598621
+      ult walk_9: -8464547492479946846
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

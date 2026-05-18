@@ -5,56 +5,80 @@ using UnityEngine.InputSystem;
 
 namespace Slash
 {
-    // Player movement and attacks. Each attack input is exactly one enemy hit.
-    // Holding A or D on the press zips to the nearest enemy in that direction.
-    // A clean press with no direction held is a neutral attack that stays on
-    // the current target, used to chip down heavier enemies.
+    // Player movement and attacks. Attack mode switches on ult state.
+    // Normal: standing slash that throws a short-range wave hitting one enemy.
+    // Ult: lock-on dash to the nearest enemy with a brief startup pause.
     public class PlayerController : MonoBehaviour
     {
+        [Header("Wiring")]
+        public UltSystem ult;
+        public UltChargeAttack chargeAttack;
+        public Sprite waveSprite;
+
         [Header("Movement")]
         public float moveSpeed = 8f;
 
-        [Header("Directional Zip")]
-        public float zipRange = 14f;
-        public float zipDuration = 0.07f;
-        public float zipCooldown = 0.10f;
-        public float zipLandOffset = 0.6f;
-        public int zipDamage = 1;
+        [Header("Normal Slash")]
+        public float normalSlashRange = 3f;
+        public float normalSlashCooldown = 0.35f;
+        public float normalSlashSpeed = 16f;
+        public float normalSlashRadius = 1.2f;
+        public Vector2 normalSlashSize = new Vector2(1f, 1f);
+        public Color normalSlashColor = Color.white;
+        public Vector3 normalSlashSpawnOffset = new Vector3(0.55f, 1.55f, 0f);
+        public int normalSlashDamage = 1;
+        // Swipe art is authored facing left; flip when the player faces right.
+        public bool flipNormalSwipeX = true;
 
-        [Header("Neutral Attack")]
-        public float neutralRange = 2.0f;
-        public int neutralDamage = 1;
-        public float neutralCooldown = 0.12f;
+        [Header("Ult Dash")]
+        public float ultDashRange = 14f;
+        public float ultDashDuration = 0.05f;
+        public float ultDashCooldown = 0.08f;
+        public float ultDashLandOffset = 0.6f;
+        public float ultDashStartupPause = 0.02f;
+        public int ultDashDamage = 1;
 
-        [Header("Combo")]
-        public float comboWindow = 2.0f;
-        public float neutralMissGrace = 1.0f;
+        [Header("Hit Visual")]
+        public float hitPositionLift = 1f;
 
-        // Fires when a hit connects. Passes the world position of the hit
-        // and the direction from the player to the target.
         public event Action<Vector3, Vector2> OnHitLanded;
+
+        static readonly int BasicSlashHash = Animator.StringToHash("BasicSlash");
+        Animator _animator;
+
+        public int ComboCount => _comboCount;
+        public bool IsZipping => _zipping;
 
         float _attackReadyAt;
         bool _zipping;
-        Enemy _currentTarget;
         int _comboCount;
-        float _comboExpireAt;
         SlashTrail _trail;
-
-        public int ComboCount => _comboCount;
+        PlayerHealth _health;
+        int _lastFacing = 1;
 
         void Awake()
         {
             _trail = GetComponent<SlashTrail>();
+            _health = GetComponent<PlayerHealth>();
+            _animator = GetComponent<Animator>();
+            if (_health != null) _health.OnDamaged += BreakCombo;
+        }
+
+        void OnDestroy()
+        {
+            if (_health != null) _health.OnDamaged -= BreakCombo;
         }
 
         void Update()
         {
+            if (_trail != null) _trail.boosted = ult != null && ult.IsActive;
+
+            if (_health != null && !_health.IsAlive) return;
+            if (chargeAttack != null && chargeAttack.IsCharging) return;
             if (_zipping) return;
 
             HandleMovement();
             HandleAttack();
-            TickCombo();
         }
 
         void HandleMovement()
@@ -66,6 +90,9 @@ namespace Slash
             if (kb.aKey.isPressed || kb.leftArrowKey.isPressed) x -= 1f;
             if (kb.dKey.isPressed || kb.rightArrowKey.isPressed) x += 1f;
 
+            if (x > 0f) _lastFacing = 1;
+            else if (x < 0f) _lastFacing = -1;
+
             transform.position += new Vector3(x * moveSpeed * Time.deltaTime, 0f, 0f);
         }
 
@@ -74,9 +101,11 @@ namespace Slash
             if (!AttackPressed()) return;
             if (Time.time < _attackReadyAt) return;
 
-            int dir = ReadHeldDirection();
-            if (dir != 0) DoDirectionalZip(dir);
-            else DoNeutralAttack();
+            // Fires on the swing, not on contact, so whiffs play too.
+            AudioCues.PlaySlash();
+
+            if (ult != null && ult.IsActive) DoUltDash();
+            else DoNormalSlash();
         }
 
         bool AttackPressed()
@@ -90,47 +119,81 @@ namespace Slash
             return false;
         }
 
-        int ReadHeldDirection()
+        void DoNormalSlash()
         {
-            var kb = Keyboard.current;
-            if (kb == null) return 0;
-
-            bool left = kb.aKey.isPressed || kb.leftArrowKey.isPressed;
-            bool right = kb.dKey.isPressed || kb.rightArrowKey.isPressed;
-
-            if (left && right) return 0;
-            if (right) return 1;
-            if (left) return -1;
-            return 0;
+            SpawnSlashWave();
+            _attackReadyAt = Time.time + normalSlashCooldown;
+            if (_animator != null) _animator.SetTrigger(BasicSlashHash);
         }
 
-        void DoDirectionalZip(int dir)
+        void SpawnSlashWave()
         {
-            var target = FindNearestInDirection(dir);
+            var go = new GameObject("SlashWave");
+            Vector3 spawnOffset = new Vector3(
+                normalSlashSpawnOffset.x * _lastFacing,
+                normalSlashSpawnOffset.y,
+                normalSlashSpawnOffset.z);
+            go.transform.position = transform.position + spawnOffset;
+            go.transform.localScale = new Vector3(normalSlashSize.x, normalSlashSize.y, 1f);
+
+            var sr = go.AddComponent<SpriteRenderer>();
+            sr.sprite = waveSprite != null ? waveSprite : SpriteUtil.Square;
+            sr.color = normalSlashColor;
+            sr.sortingOrder = 5;
+            sr.flipX = flipNormalSwipeX ^ (_lastFacing < 0);
+
+            var wave = go.AddComponent<PlayerSlashWave>();
+            wave.direction = new Vector2(_lastFacing, 0f);
+            wave.speed = normalSlashSpeed;
+            wave.range = normalSlashRange;
+            wave.damage = normalSlashDamage;
+            wave.radius = normalSlashRadius;
+            wave.OnHit += OnWaveHit;
+        }
+
+        void OnWaveHit(Enemy target, Vector3 hitWorld, Vector2 dir)
+        {
+            RegisterHit(target);
+        }
+
+        void DoUltDash()
+        {
+            var target = FindNearestEnemyInRange(ultDashRange);
             if (target == null)
             {
-                BreakCombo();
-                _attackReadyAt = Time.time + zipCooldown;
+                _attackReadyAt = Time.time + ultDashCooldown;
                 return;
             }
-            StartCoroutine(ZipTo(target, dir));
+
+            int approachDir = target.transform.position.x >= transform.position.x ? 1 : -1;
+            StartCoroutine(UltDashTo(target, approachDir));
         }
 
-        IEnumerator ZipTo(Enemy target, int approachDir)
+        IEnumerator UltDashTo(Enemy target, int approachDir)
         {
             _zipping = true;
-            Vector3 start = transform.position;
-            Vector3 end = target.transform.position;
+            _lastFacing = approachDir;
 
-            // Land on the side we came from so we stay adjacent to this enemy.
-            end.x -= approachDir * zipLandOffset;
+            if (ultDashStartupPause > 0f)
+            {
+                float t = 0f;
+                while (t < ultDashStartupPause)
+                {
+                    t += Time.deltaTime;
+                    yield return null;
+                }
+            }
+
+            Vector3 start = transform.position;
+            Vector3 end = target != null ? target.transform.position : start + new Vector3(approachDir * 4f, 0f, 0f);
+            end.x -= approachDir * ultDashLandOffset;
             end.y = start.y;
 
-            float t = 0f;
-            while (t < zipDuration)
+            float zt = 0f;
+            while (zt < ultDashDuration)
             {
-                t += Time.deltaTime;
-                transform.position = Vector3.Lerp(start, end, Mathf.Clamp01(t / zipDuration));
+                zt += Time.deltaTime;
+                transform.position = Vector3.Lerp(start, end, Mathf.Clamp01(zt / ultDashDuration));
                 if (_trail != null) _trail.SpawnGhost();
                 yield return null;
             }
@@ -138,70 +201,15 @@ namespace Slash
 
             if (target != null && target.IsAlive)
             {
-                target.TakeDamage(zipDamage);
+                target.TakeDamage(ultDashDamage);
                 RegisterHit(target);
             }
 
-            _attackReadyAt = Time.time + zipCooldown;
+            _attackReadyAt = Time.time + ultDashCooldown;
             _zipping = false;
         }
 
-        void DoNeutralAttack()
-        {
-            Enemy target = null;
-
-            if (_currentTarget != null && _currentTarget.IsAlive &&
-                Vector2.Distance(transform.position, _currentTarget.transform.position) <= neutralRange)
-            {
-                target = _currentTarget;
-            }
-            else
-            {
-                target = FindNearestInRange(neutralRange);
-            }
-
-            if (target == null)
-            {
-                // Neutral miss shortens the combo window instead of killing it outright.
-                if (_comboCount > 0)
-                {
-                    float graced = Time.time + neutralMissGrace;
-                    if (graced < _comboExpireAt) _comboExpireAt = graced;
-                }
-                _attackReadyAt = Time.time + neutralCooldown;
-                return;
-            }
-
-            target.TakeDamage(neutralDamage);
-            RegisterHit(target);
-            _attackReadyAt = Time.time + neutralCooldown;
-        }
-
-        Enemy FindNearestInDirection(int dir)
-        {
-            Enemy best = null;
-            float bestDist = float.MaxValue;
-            float px = transform.position.x;
-
-            foreach (var e in Enemy.All)
-            {
-                if (e == null || !e.IsAlive) continue;
-                float dx = e.transform.position.x - px;
-                if (dir > 0 && dx <= 0f) continue;
-                if (dir < 0 && dx >= 0f) continue;
-
-                float abs = Mathf.Abs(dx);
-                if (abs > zipRange) continue;
-                if (abs < bestDist)
-                {
-                    bestDist = abs;
-                    best = e;
-                }
-            }
-            return best;
-        }
-
-        Enemy FindNearestInRange(float range)
+        Enemy FindNearestEnemyInRange(float range)
         {
             Enemy best = null;
             float bestDist = float.MaxValue;
@@ -210,48 +218,31 @@ namespace Slash
                 if (e == null || !e.IsAlive) continue;
                 float d = Vector2.Distance(transform.position, e.transform.position);
                 if (d > range) continue;
-                if (d < bestDist)
-                {
-                    bestDist = d;
-                    best = e;
-                }
+                if (d < bestDist) { bestDist = d; best = e; }
             }
             return best;
         }
 
         void RegisterHit(Enemy target)
         {
-            _currentTarget = target;
             _comboCount++;
-            _comboExpireAt = Time.time + comboWindow;
 
             Vector2 dir = (Vector2)(target.transform.position - transform.position);
-            if (dir.sqrMagnitude < 0.0001f) dir = new Vector2(1f, 0f);
+            if (dir.sqrMagnitude < 0.0001f) dir = new Vector2(_lastFacing, 0f);
             else dir.Normalize();
 
-            OnHitLanded?.Invoke(target.transform.position, dir);
+            Vector3 hitPos = target.transform.position + new Vector3(0f, hitPositionLift, 0f);
+            OnHitLanded?.Invoke(hitPos, dir);
         }
 
-        void BreakCombo()
-        {
-            _comboCount = 0;
-            _comboExpireAt = 0f;
-        }
-
-        void TickCombo()
-        {
-            if (_comboCount > 0 && Time.time >= _comboExpireAt)
-            {
-                _comboCount = 0;
-            }
-        }
+        public void BreakCombo() { _comboCount = 0; }
 
         void OnDrawGizmosSelected()
         {
             Gizmos.color = new Color(1f, 0.6f, 0.2f, 0.35f);
-            Gizmos.DrawWireSphere(transform.position, zipRange);
+            Gizmos.DrawWireSphere(transform.position, ultDashRange);
             Gizmos.color = new Color(0.3f, 0.8f, 1f, 0.55f);
-            Gizmos.DrawWireSphere(transform.position, neutralRange);
+            Gizmos.DrawWireSphere(transform.position, normalSlashRange);
         }
     }
 }
